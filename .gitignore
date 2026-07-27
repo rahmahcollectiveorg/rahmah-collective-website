@@ -1,0 +1,9 @@
+# Local Claude Code tooling — not part of the published site
+.claude/
+.impeccable/
+.agents/
+skills-lock.json
+
+# OS junk
+.DS_Store
+Thumbs.db
