@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Rahmah Collective — Color Palette Options</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Marcellus&family=Nunito+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  *{ box-sizing:border-box; }
+  body{
+    margin:0;
+    background:#e8e2df;
+    font-family:'Nunito Sans', sans-serif;
+    padding:40px 20px 100px;
+  }
+  .intro{ max-width:900px; margin:0 auto 40px; }
+  .intro h1{ font-family:'Marcellus', serif; font-size:1.8rem; color:#333; margin-bottom:8px; }
+  .intro p{ color:#555; line-height:1.6; max-width:700px; }
+
+  .option{
+    max-width:900px;
+    margin:0 auto 56px;
+    background:#fff;
+    border-radius:16px;
+    overflow:hidden;
+    box-shadow:0 12px 32px rgba(0,0,0,0.12);
+  }
+  .option-label{
+    padding:18px 28px;
+    background:#2a2a2a;
+    color:#fff;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    flex-wrap:wrap;
+    gap:10px;
+  }
+  .option-label h2{ font-family:'Marcellus', serif; font-size:1.2rem; margin:0; font-weight:400; }
+  .option-label .mood{ font-size:0.82rem; opacity:0.75; font-style:italic; }
+  .swatches{ display:flex; gap:6px; padding:14px 28px; background:#f4f4f4; flex-wrap:wrap; }
+  .swatch{ display:flex; flex-direction:column; align-items:center; gap:4px; }
+  .swatch-color{ width:34px; height:34px; border-radius:8px; border:1px solid rgba(0,0,0,0.08); }
+  .swatch-hex{ font-size:0.62rem; color:#777; font-family:monospace; }
+
+  /* ===== shared demo component structure ===== */
+  .demo{
+    background:#FDF8F6;
+    padding:32px 28px 40px;
+  }
+  .demo-nav{
+    display:flex; align-items:center; justify-content:space-between;
+    margin-bottom:28px;
+  }
+  .demo-logo{ font-family:'Marcellus', serif; font-size:1.1rem; letter-spacing:0.02em; }
+  .demo-donate-btn{
+    color:#fff;
+    font-size:0.8rem;
+    font-weight:600;
+    padding:9px 20px;
+    border-radius:999px;
+  }
+  .demo-hero{ text-align:center; margin-bottom:32px; }
+  .demo-eyebrow{
+    display:inline-flex;
+    background:#fff;
+    border:1px solid rgba(0,0,0,0.06);
+    font-size:0.68rem;
+    font-weight:700;
+    letter-spacing:0.12em;
+    text-transform:uppercase;
+    padding:6px 14px;
+    border-radius:999px;
+    margin-bottom:14px;
+    box-shadow:0 2px 6px rgba(0,0,0,0.05);
+  }
+  .demo-h1{
+    font-family:'Marcellus', serif;
+    font-size:2rem;
+    margin:0 0 12px;
+    line-height:1.15;
+  }
+  .demo-lede{ font-size:0.92rem; max-width:460px; margin:0 auto 20px; line-height:1.6; }
+  .demo-actions{ display:flex; gap:10px; justify-content:center; }
+  .demo-btn-primary{
+    color:#fff;
+    font-size:0.85rem;
+    font-weight:600;
+    padding:11px 24px;
+    border-radius:999px;
+  }
+  .demo-btn-ghost{
+    border:1.5px solid;
+    font-size:0.85rem;
+    font-weight:600;
+    padding:10px 22px;
+    border-radius:999px;
+  }
+
+  .demo-tabs{ display:grid; grid-template-columns:repeat(3,1fr); gap:10px; margin-bottom:20px; }
+  .demo-tab{
+    border-radius:12px;
+    padding:14px 16px;
+    aspect-ratio:2.2/1;
+    display:flex; flex-direction:column; justify-content:space-between;
+    font-family:'Marcellus', serif;
+    font-size:0.95rem;
+  }
+  .demo-tab span{ align-self:flex-end; font-size:1.2rem; font-weight:300; }
+
+  .demo-card{
+    background:#fff;
+    border-radius:14px;
+    padding:18px 20px;
+    box-shadow:0 4px 16px rgba(0,0,0,0.06);
+    display:flex; align-items:center; gap:16px; justify-content:space-between; flex-wrap:wrap;
+  }
+  .demo-card-text h3{ font-family:'Marcellus', serif; font-size:1.05rem; margin:0 0 4px; }
+  .demo-card-text p{ font-size:0.82rem; color:#7A6265; margin:0; max-width:300px; }
+  .demo-card .demo-btn-primary{ flex-shrink:0; }
+
+  .note{ max-width:900px; margin:0 auto; color:#666; font-size:0.85rem; text-align:center; }
+</style>
+</head>
+<body>
+
+<div class="intro">
+  <h1>Two color directions for Rahmah Collective</h1>
+  <p>Narrowed down to Options 1 and 2, both tweaked per your latest feedback. No more gradient mixing pink and green together, and Option 1's three work-tab boxes now each get their own distinct tone. Open this in a real browser (Chrome/Edge) to see the fonts render correctly.</p>
+</div>
+
+<!-- OPTION 1 -->
+<div class="option opt1">
+  <div class="option-label">
+    <h2>Option 1 — Reimagined Classic</h2>
+    <span class="mood">brown for text only, rose gradient for buttons, three distinct tab tones</span>
+  </div>
+  <div class="swatches">
+    <div class="swatch"><div class="swatch-color" style="background:#BD8186"></div><span class="swatch-hex">BD8186</span></div>
+    <div class="swatch"><div class="swatch-color" style="background:#EBCBD4"></div><span class="swatch-hex">EBCBD4</span></div>
+    <div class="swatch"><div class="swatch-color" style="background:#8E4A54"></div><span class="swatch-hex">8E4A54</span></div>
+    <div class="swatch"><div class="swatch-color" style="background:#D8C3A0"></div><span class="swatch-hex">D8C3A0</span></div>
+    <div class="swatch"><div class="swatch-color" style="background:#4A3538"></div><span class="swatch-hex">4A3538</span></div>
+    <div class="swatch"><div class="swatch-color" style="background:#FDF8F6;border:1px solid #ddd;"></div><span class="swatch-hex">FDF8F6</span></div>
+  </div>
+  <div class="demo">
+    <div class="demo-nav">
+      <span class="demo-logo" style="color:#4A3538;">RAHMAH COLLECTIVE</span>
+      <span class="demo-donate-btn" style="background:linear-gradient(135deg,#BD8186,#8E4A54);">Donate</span>
+    </div>
+    <div class="demo-hero">
+      <span class="demo-eyebrow" style="color:#4A3538;">Houston, Texas</span>
+      <h1 class="demo-h1" style="color:#4A3538;">Rooted in Mercy.<br>Grounded in Care.</h1>
+      <p class="demo-lede" style="color:#7A6265;">Dark brown stays text-only: logo, headings, labels. Buttons are a soft rose gradient. The three work-tab boxes below are now visibly distinct: dark pink, light pink, and beige, instead of two of them sharing one color.</p>
+      <div class="demo-actions">
+        <span class="demo-btn-primary" style="background:linear-gradient(135deg,#BD8186,#8E4A54);">Get Involved</span>
+        <span class="demo-btn-ghost" style="border-color:#4A3538;color:#4A3538;">Our Story</span>
+      </div>
+    </div>
+    <div class="demo-tabs">
+      <div class="demo-tab" style="background:#BD8186;color:#fff;">Education<span>&minus;</span></div>
+      <div class="demo-tab" style="background:#EBCBD4;color:#4A3538;">Community<span>+</span></div>
+      <div class="demo-tab" style="background:#D8C3A0;color:#4A3538;">Data &amp; Research<span>+</span></div>
+    </div>
+    <div class="demo-card">
+      <div class="demo-card-text"><h3 style="color:#4A3538;">Ready to give?</h3><p>Dark pink, light pink, and beige give each pillar its own identity without needing a fourth accent color.</p></div>
+      <span class="demo-btn-primary" style="background:linear-gradient(135deg,#BD8186,#8E4A54);">Donate Now</span>
+    </div>
+  </div>
+</div>
+
+<!-- OPTION 2 -->
+<div class="option opt2">
+  <div class="option-label">
+    <h2>Option 2 — Dusty Rose Garden</h2>
+    <span class="mood">rose + two greens + gold, three distinct tabs</span>
+  </div>
+  <div class="swatches">
+    <div class="swatch"><div class="swatch-color" style="background:#BD8186"></div><span class="swatch-hex">BD8186</span></div>
+    <div class="swatch"><div class="swatch-color" style="background:#EBCBD4"></div><span class="swatch-hex">EBCBD4</span></div>
+    <div class="swatch"><div class="swatch-color" style="background:#6B383D"></div><span class="swatch-hex">6B383D</span></div>
+    <div class="swatch"><div class="swatch-color" style="background:#ACBEA3"></div><span class="swatch-hex">ACBEA3</span></div>
+    <div class="swatch"><div class="swatch-color" style="background:#838E83"></div><span class="swatch-hex">838E83</span></div>
+    <div class="swatch"><div class="swatch-color" style="background:#D8C3A0"></div><span class="swatch-hex">D8C3A0</span></div>
+  </div>
+  <div class="demo">
+    <div class="demo-nav">
+      <span class="demo-logo" style="color:#6B383D;">RAHMAH COLLECTIVE</span>
+      <span class="demo-donate-btn" style="background:#BD8186;">Donate</span>
+    </div>
+    <div class="demo-hero">
+      <span class="demo-eyebrow" style="color:#6B383D;">Houston, Texas</span>
+      <h1 class="demo-h1" style="color:#6B383D;">Rooted in Mercy.<br>Grounded in Care.</h1>
+      <p class="demo-lede" style="color:#6B7268;">Gold joins as a genuine 6th color, it doesn't replace either green. All three tabs are now different shades: gold marks what's selected, and the other two use two distinct greens, a lighter sage and a deeper olive, instead of repeating the same tone twice.</p>
+      <div class="demo-actions">
+        <span class="demo-btn-primary" style="background:#BD8186;">Get Involved</span>
+        <span class="demo-btn-ghost" style="border-color:#6B383D;color:#6B383D;">Our Story</span>
+      </div>
+    </div>
+    <div class="demo-tabs">
+      <div class="demo-tab" style="background:#D8C3A0;color:#6B383D;">Education<span>&minus;</span></div>
+      <div class="demo-tab" style="background:#ACBEA3;color:#3A3F38;">Community<span>+</span></div>
+      <div class="demo-tab" style="background:#838E83;color:#fff;">Data &amp; Research<span>+</span></div>
+    </div>
+    <div class="demo-card">
+      <div class="demo-card-text"><h3 style="color:#6B383D;">Ready to give?</h3><p style="color:#6B7268;">Gold (selected), light sage, and deep olive give all three pillars their own identity, the same trick as Option 1, with a garden palette instead of beige.</p></div>
+      <span class="demo-btn-primary" style="background:#BD8186;">Donate Now</span>
+    </div>
+  </div>
+</div>
+
+<p class="note">Tell me which one (or mix elements from both) and I'll implement it across all four pages.</p>
+
+</body>
+</html>

@@ -1,0 +1,94 @@
+/* PREVIEW ONLY — Option 2 "Dusty Rose Garden" override.
+   Loaded after styles.css. Not part of the permanent site.
+   Gold is removed entirely and replaced with a third, lighter green.
+   Rose stays only on the primary action buttons as the brand accent;
+   everything else (icons, links, footer, overlays, outline buttons,
+   work tabs) is re-pointed to the green family via the shared tokens
+   the base stylesheet already uses. */
+
+:root{
+  --color-primary:#BD8186;         /* rose kept only for primary action buttons */
+  --color-primary-dark:#4F5D46;    /* deep green — icons, links, footer, back-to-top */
+  --color-primary-darker:#3E4838;  /* deepest green — hover states */
+  --color-secondary:#ACBEA3;       /* mid sage — outline-button borders, contact underline */
+  --color-tab:#ACBEA3;
+  --color-secondary-soft:#E4EBDF;  /* light green tint — icon circles, tag-soon bg, hero/about overlays */
+  --color-gold:#C7D4BE;            /* repurposed: lightest green, replaces gold entirely */
+  --color-text:#6B383D;
+  --color-text-soft:#6B7268;
+}
+
+/* Buttons: flat rose stays as the one deliberate accent color */
+.btn-primary,
+.gi-featured-btn,
+a.btn.btn-primary{
+  background:#BD8186 !important;
+  color:#fff !important;
+  border-color: transparent !important;
+}
+
+h1, h2, h3, h4,
+.eyebrow,
+.hero-title,
+.story-closing,
+.contact-email{
+  color:#6B383D !important;
+}
+
+.gi-featured-content h3{
+  color:#fff !important;
+}
+
+.btn-ghost{
+  border-color:#6B383D !important;
+  color:#6B383D !important;
+}
+
+.learn-more-link,
+.link-arrow{
+  color:#4F5D46 !important;
+}
+
+/* Work tabs: three fixed, distinct greens — deep olive, mid sage, light sage. No gold. */
+.work-tab:nth-child(1):not([aria-selected="true"]){
+  background:#838E83 !important;
+  color:#fff !important;
+  border-color:#838E83 !important;
+}
+.work-tab:nth-child(2):not([aria-selected="true"]){
+  background:#ACBEA3 !important;
+  color:#3A3F38 !important;
+  border-color:#ACBEA3 !important;
+}
+.work-tab:nth-child(3):not([aria-selected="true"]){
+  background:#C7D4BE !important;
+  color:#3A3F38 !important;
+  border-color:#C7D4BE !important;
+}
+
+/* Whichever tab is selected switches to the deepest green, so it's
+   unmistakably "pressed" no matter which of the three it is. */
+.work-tab[aria-selected="true"]{
+  background:#3E4838 !important;
+  color:#fff !important;
+  border-color:#3E4838 !important;
+}
+
+.gi-featured{
+  background: linear-gradient(160deg, #4F5D46 0%, #3E4838 100%) !important;
+}
+
+.site-footer{
+  background:#4F5D46 !important;
+}
+
+.section-head h2::after{
+  background:#ACBEA3 !important;
+}
+
+/* Hero background overlay: swap the pink radial highlight for a green one */
+.hero-gradient{
+  background:
+    radial-gradient(circle at 15% 20%, rgba(172,190,163,0.45), transparent 55%),
+    linear-gradient(160deg, var(--color-cream) 10%, var(--color-secondary-soft) 55%, var(--color-cream) 100%) !important;
+}
