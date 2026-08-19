@@ -268,6 +268,12 @@ button{ font:inherit; }
   flex-direction:column;
   align-items:center;
 }
+.hero-bismillah{
+  font-family:var(--font-arabic);
+  font-size:clamp(1.15rem, 2.4vw, 1.5rem);
+  color:#8E4A54;
+  margin:0 0 var(--space-3);
+}
 .hero-wordmark{
   font-family:var(--font-heading);
   font-weight:400;
@@ -661,14 +667,14 @@ section{ padding: var(--space-7) 0; position:relative; }
   display:inline-block;
   padding:5px 14px;
   border-radius:999px;
-  background:var(--color-secondary-soft);
-  color:var(--color-primary-dark);
+  background:var(--color-secondary);
+  color:#4A3538;
   font-size:0.85rem;
-  font-weight:600;
+  font-weight:700;
   white-space:nowrap;
-  transition: background var(--dur-fast) var(--ease-out), transform var(--dur-fast) var(--ease-out);
+  transition: background var(--dur-fast) var(--ease-out), color var(--dur-fast) var(--ease-out), transform var(--dur-fast) var(--ease-out);
 }
-.resource-link-btn:hover{ background:var(--color-secondary); transform:translateY(-1px); }
+.resource-link-btn:hover{ background:#4A3538; color:#fff; transform:translateY(-1px); }
 @media (max-width:767px){
   .resource-categories{ grid-template-columns:1fr; }
 }
@@ -802,13 +808,13 @@ section{ padding: var(--space-7) 0; position:relative; }
 .contact-bg{
   position:absolute; inset:0;
   background-size:cover; background-position:center;
-  opacity:0.10;
+  opacity:0.35;
   z-index:var(--z-base);
 }
 .contact::before{
   content:"";
   position:absolute; inset:0;
-  background:linear-gradient(180deg, var(--color-white), var(--color-cream));
+  background:linear-gradient(160deg, var(--color-cream) 10%, var(--color-secondary-soft) 55%, var(--color-cream) 100%);
   z-index:var(--z-base);
 }
 .contact-inner{ position:relative; z-index:var(--z-raised); max-width:560px; }
