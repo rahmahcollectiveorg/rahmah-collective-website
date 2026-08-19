@@ -121,6 +121,40 @@
     });
   }
 
+  // Generic dropdown menus (e.g. Take Our Surveys)
+  var dropdowns = Array.prototype.slice.call(document.querySelectorAll(".dropdown"));
+  if (dropdowns.length) {
+    var closeDropdown = function (dd) {
+      dd.classList.remove("is-open");
+      var btn = dd.querySelector(".dropdown-toggle");
+      if (btn) btn.setAttribute("aria-expanded", "false");
+    };
+    var closeAllDropdowns = function () {
+      dropdowns.forEach(closeDropdown);
+    };
+    dropdowns.forEach(function (dd) {
+      var toggleBtn = dd.querySelector(".dropdown-toggle");
+      if (!toggleBtn) return;
+      toggleBtn.addEventListener("click", function (e) {
+        e.stopPropagation();
+        var isOpen = dd.classList.contains("is-open");
+        closeAllDropdowns();
+        if (!isOpen) {
+          dd.classList.add("is-open");
+          toggleBtn.setAttribute("aria-expanded", "true");
+        }
+      });
+    });
+    document.addEventListener("keydown", function (e) {
+      if (e.key === "Escape") closeAllDropdowns();
+    });
+    document.addEventListener("click", function (e) {
+      dropdowns.forEach(function (dd) {
+        if (dd.classList.contains("is-open") && !dd.contains(e.target)) closeDropdown(dd);
+      });
+    });
+  }
+
   // Scroll-reveal animations
   var revealEls = document.querySelectorAll(".reveal");
   if ("IntersectionObserver" in window && revealEls.length) {
