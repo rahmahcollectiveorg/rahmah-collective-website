@@ -691,6 +691,8 @@ section{ padding: var(--space-7) 0; position:relative; }
   margin-bottom:var(--space-1);
 }
 .work-list-feature span{ color:var(--color-text); }
+.work-list-feature p{ color:var(--color-text); margin:0 0 var(--space-2); }
+.work-list-feature p:last-of-type{ margin-bottom:var(--space-2); }
 
 .resource-jumpnav{
   display:flex;
