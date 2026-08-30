@@ -157,6 +157,7 @@ button{ font:inherit; }
 .btn-outline:hover{ background: var(--color-secondary-soft); transform:translateY(-2px); }
 .btn:active{ transform:scale(0.97); box-shadow:none; }
 .btn-small{ padding:10px 20px; font-size:0.85rem; margin-top:var(--space-2); }
+.btn-disabled{ opacity:0.55; cursor:default; pointer-events:none; }
 .btn-nav{ padding:11px 24px; }
 
 .link-arrow{
@@ -305,6 +306,23 @@ button{ font:inherit; }
   color:#6B383D;
   border-bottom:1px solid currentColor;
 }
+
+.hero-announce-bar{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  gap:10px;
+  flex-wrap:wrap;
+  padding:12px var(--space-3);
+  background:linear-gradient(135deg, #8E4A54 0%, #6B383D 100%);
+  color:#fff;
+  font-family:var(--font-body);
+  font-size:0.88rem;
+  font-weight:600;
+  text-align:center;
+}
+.hero-announce-bar a{ color:#fff; text-decoration:underline; text-underline-offset:3px; }
+.hero-announce-bar a:hover{ opacity:0.85; }
 
 .scroll-cue{
   position:absolute;
